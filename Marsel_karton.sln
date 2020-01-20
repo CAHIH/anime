@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marsel_karton", "Marsel_karton\Marsel_karton.csproj", "{A6BE23EF-06B7-468F-BA1A-2B4F99A736BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6BE23EF-06B7-468F-BA1A-2B4F99A736BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6BE23EF-06B7-468F-BA1A-2B4F99A736BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6BE23EF-06B7-468F-BA1A-2B4F99A736BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6BE23EF-06B7-468F-BA1A-2B4F99A736BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D36F748-5EEB-45FC-B05F-D5A2BA2CBC4D}
+	EndGlobalSection
+EndGlobal

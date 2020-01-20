@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\bin\Debug\Marsel_karton.exe.config
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\bin\Debug\Marsel_karton.exe
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\bin\Debug\Marsel_karton.pdb
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.csprojAssemblyReference.cache
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.Form1.resources
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.Properties.Resources.resources
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.exe
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.pdb
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.Form2.resources
+C:\Users\user\source\repos\Marsel_karton\Marsel_karton\obj\Debug\Marsel_karton.Form3.resources
