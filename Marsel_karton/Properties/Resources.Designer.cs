@@ -73,6 +73,16 @@ namespace Marsel_karton.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Joseph {
+            get {
+                object obj = ResourceManager.GetObject("Joseph", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Joske {
             get {
                 object obj = ResourceManager.GetObject("Joske", resourceCulture);

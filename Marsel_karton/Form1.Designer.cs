@@ -35,8 +35,9 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
-            this.Календарь = new System.Windows.Forms.TabControl();
+            this.ДжоДжо = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -45,16 +46,21 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.joskeButton = new System.Windows.Forms.Button();
+            this.jojoButton = new System.Windows.Forms.Button();
+            this.dioButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
-            this.Календарь.SuspendLayout();
+            this.ДжоДжо.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -99,21 +105,21 @@
             this.toolTip1.SetToolTip(this.label1, "Правда, ты кто ?");
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Календарь
+            // ДжоДжо
             // 
-            this.Календарь.Controls.Add(this.tabPage1);
-            this.Календарь.Controls.Add(this.tabPage3);
-            this.Календарь.Controls.Add(this.tabPage2);
-            this.Календарь.Controls.Add(this.tabPage4);
-            this.Календарь.Controls.Add(this.tabPage5);
-            this.Календарь.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Календарь.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Календарь.Location = new System.Drawing.Point(0, 0);
-            this.Календарь.Name = "Календарь";
-            this.Календарь.SelectedIndex = 0;
-            this.Календарь.Size = new System.Drawing.Size(683, 351);
-            this.Календарь.TabIndex = 7;
-            this.toolTip1.SetToolTip(this.Календарь, "Можешь посчитать сколько ещё дней до чего либо");
+            this.ДжоДжо.Controls.Add(this.tabPage1);
+            this.ДжоДжо.Controls.Add(this.tabPage3);
+            this.ДжоДжо.Controls.Add(this.tabPage2);
+            this.ДжоДжо.Controls.Add(this.tabPage4);
+            this.ДжоДжо.Controls.Add(this.tabPage5);
+            this.ДжоДжо.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ДжоДжо.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ДжоДжо.Location = new System.Drawing.Point(0, 0);
+            this.ДжоДжо.Name = "ДжоДжо";
+            this.ДжоДжо.SelectedIndex = 0;
+            this.ДжоДжо.Size = new System.Drawing.Size(683, 351);
+            this.ДжоДжо.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.ДжоДжо, "Можешь посчитать сколько ещё дней до чего либо");
             // 
             // tabPage1
             // 
@@ -130,6 +136,18 @@
             this.tabPage1.Text = "Пора домой";
             this.tabPage1.ToolTipText = "Быстрее в Доту2";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.Location = new System.Drawing.Point(3, 298);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(669, 23);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Что посмотреть?";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -202,12 +220,55 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.Controls.Add(this.pictureBox2);
+            this.tabPage5.Controls.Add(this.joskeButton);
+            this.tabPage5.Controls.Add(this.jojoButton);
+            this.tabPage5.Controls.Add(this.dioButton);
             this.tabPage5.Location = new System.Drawing.Point(4, 23);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(675, 324);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "tabPage5";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(0, 68);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(675, 260);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // joskeButton
+            // 
+            this.joskeButton.Location = new System.Drawing.Point(270, 4);
+            this.joskeButton.Name = "joskeButton";
+            this.joskeButton.Size = new System.Drawing.Size(76, 37);
+            this.joskeButton.TabIndex = 7;
+            this.joskeButton.Text = "Джоске Хигашиката";
+            this.joskeButton.UseVisualStyleBackColor = true;
+            this.joskeButton.Click += new System.EventHandler(this.joskeButton_Click);
+            // 
+            // jojoButton
+            // 
+            this.jojoButton.Location = new System.Drawing.Point(131, 3);
+            this.jojoButton.Name = "jojoButton";
+            this.jojoButton.Size = new System.Drawing.Size(83, 38);
+            this.jojoButton.TabIndex = 6;
+            this.jojoButton.Text = "Джотаро Куджо ";
+            this.jojoButton.UseVisualStyleBackColor = true;
+            this.jojoButton.Click += new System.EventHandler(this.jojoButton_Click);
+            // 
+            // dioButton
+            // 
+            this.dioButton.Location = new System.Drawing.Point(8, 3);
+            this.dioButton.Name = "dioButton";
+            this.dioButton.Size = new System.Drawing.Size(80, 38);
+            this.dioButton.TabIndex = 5;
+            this.dioButton.Text = "Дио Брандо";
+            this.dioButton.UseVisualStyleBackColor = true;
+            this.dioButton.Click += new System.EventHandler(this.dioButton_Click);
             // 
             // toolTip1
             // 
@@ -221,37 +282,27 @@
             this.splitter1.TabIndex = 11;
             this.splitter1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(3, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(669, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Что посмотреть?";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 351);
             this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.Календарь);
+            this.Controls.Add(this.ДжоДжо);
             this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "Form1";
             this.Text = "Программа Марселя";
             this.toolTip1.SetToolTip(this, "Я тебе всё написал");
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.contextMenuStrip1.ResumeLayout(false);
-            this.Календарь.ResumeLayout(false);
+            this.ДжоДжо.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -261,7 +312,7 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TabControl Календарь;
+        private System.Windows.Forms.TabControl ДжоДжо;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ToolTip toolTip1;
@@ -277,6 +328,10 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button joskeButton;
+        private System.Windows.Forms.Button jojoButton;
+        private System.Windows.Forms.Button dioButton;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

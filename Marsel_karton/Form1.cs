@@ -19,8 +19,6 @@ namespace Marsel_karton
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
-            f.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,8 +34,27 @@ namespace Marsel_karton
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3();
+        }
+
+        private void dioButton_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3("Дио Брандо");
             f.ShowDialog();
+        }
+
+        private void jojoButton_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3("ДжоДжо");
+            f.ShowDialog();
+
+        }
+
+        private void joskeButton_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3("Джоске");
+            f.ShowDialog();
+
         }
     }
 }
+
