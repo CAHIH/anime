@@ -30,6 +30,9 @@ namespace Marsel_karton
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,21 +41,18 @@ namespace Marsel_karton
 
         private void dioButton_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3("Дио Брандо");
+            Button btn = (Button)sender;
+            ChelovekForm f = new ChelovekForm(btn.Tag.ToString());
             f.ShowDialog();
         }
 
-        private void jojoButton_Click(object sender, EventArgs e)
+        private void tabPage1_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3("ДжоДжо");
-            f.ShowDialog();
 
         }
 
-        private void joskeButton_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Form3 f = new Form3("Джоске");
-            f.ShowDialog();
 
         }
     }
