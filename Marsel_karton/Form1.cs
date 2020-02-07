@@ -55,6 +55,11 @@ namespace Marsel_karton
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/results?search_query=%D0%B4%D0%B6%D0%BE%D0%B4%D0%B6%D0%BE");
+        }
     }
 }
 
