@@ -10,15 +10,45 @@ using System.Windows.Forms;
 
 namespace Marsel_karton
 {
-    public partial class HeroesForm : Form
+
+    public struct Jojo
+    {
+        public string name;
+        public bool isLife;
+        public int vozrast;
+        public Button lbl;
+        
+
+        public Jojo(string _name, bool _isLife, int _vozrast , Button lbl1)
+        {
+            name = _name;
+            isLife = _isLife;
+            vozrast = _vozrast;
+            lbl = lbl1;
+        }
+    }
+
+    public partial class HeroesForm : Form        
     {
         Button[] knopki = new Button[10];
+
+        Jojo[] persons = new Jojo[100];
 
 
         public HeroesForm(string hero)
         {
             InitializeComponent();
             Text = hero;
+
+            persons[0] = new Jojo("Джоске", true, 17, button1);
+            persons[1] = new Jojo("Джозеф", true, 57, button2);
+            persons[2] = new Jojo("Джотаро", true, 33, button3);
+            persons[3] = new Jojo("Пуччи", true, 39, button4);
+            persons[4] = new Jojo("Джолин", true, 19, button5);
+            persons[5] = new Jojo("Окуясу", true, 17, button6);
+            /*persons[6] = new Jojo("Дьяволо", true, 35);
+            persons[7] = new Jojo("Дио Брандо", true,113);
+            persons[8] = new Jojo("Джонни", true, 19);*/
 
             knopki[0] = button1;
             knopki[1] = button2;
@@ -69,8 +99,12 @@ namespace Marsel_karton
             {
                 button1.Tag = "Okuyasu";
                 button1.Text = "Неджимура Окуясу";
+                button2.Tag = "Speedwagon";
+                button2.Text = "Спидвагон";
+                button3.Tag = "Gyro Zepelli";
+                button3.Text = "Джайро Цепппеле";
 
-                for (int i = 1; i < 6; i++)
+                for (int i = 1 ; i < 6; i++)
                     knopki[i].Visible = false;
 
             }
@@ -84,6 +118,35 @@ namespace Marsel_karton
         }
 
         private void HeroesForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < 6; i++)
+            {
+                persons[i].lbl.Visible = false;
+                if (persons[i].vozrast < Convert.ToInt32(comboBox1.Text))
+                {
+                    persons[i].lbl.Visible = true;
+                    persons[i].lbl.Text = persons[i].name;
+                }
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
