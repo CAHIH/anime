@@ -49,14 +49,14 @@
             this.jojoButton = new System.Windows.Forms.Button();
             this.jolinButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.siteTabPage = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.siteTabPage = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.ДжоДжо.SuspendLayout();
             this.mainTabPage.SuspendLayout();
@@ -65,8 +65,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.siteTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -77,15 +77,16 @@
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 28);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(116, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(134, 24);
             this.toolStripMenuItem2.Text = "1242134";
             // 
             // label1
@@ -96,7 +97,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label1.Location = new System.Drawing.Point(13, 221);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 45);
+            this.label1.Size = new System.Drawing.Size(354, 55);
             this.label1.TabIndex = 3;
             this.label1.Text = "Что посмотреть?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -122,10 +123,10 @@
             this.mainTabPage.Controls.Add(this.pictureBox1);
             this.mainTabPage.Controls.Add(this.richTextBox1);
             this.mainTabPage.Controls.Add(this.label1);
-            this.mainTabPage.Location = new System.Drawing.Point(4, 23);
+            this.mainTabPage.Location = new System.Drawing.Point(4, 27);
             this.mainTabPage.Name = "mainTabPage";
             this.mainTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.mainTabPage.Size = new System.Drawing.Size(777, 324);
+            this.mainTabPage.Size = new System.Drawing.Size(777, 320);
             this.mainTabPage.TabIndex = 0;
             this.mainTabPage.Text = "Пора домой";
             this.mainTabPage.ToolTipText = "Быстрее в Доту2";
@@ -144,7 +145,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Source Code Pro", 14.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.richTextBox1.Location = new System.Drawing.Point(6, 3);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
@@ -157,9 +158,9 @@
             // 
             this.persTabPage.Controls.Add(this.tableLayoutPanel1);
             this.persTabPage.Controls.Add(this.pictureBox2);
-            this.persTabPage.Location = new System.Drawing.Point(4, 23);
+            this.persTabPage.Location = new System.Drawing.Point(4, 27);
             this.persTabPage.Name = "persTabPage";
-            this.persTabPage.Size = new System.Drawing.Size(777, 324);
+            this.persTabPage.Size = new System.Drawing.Size(777, 320);
             this.persTabPage.TabIndex = 4;
             this.persTabPage.Text = "Персонажи";
             this.persTabPage.UseVisualStyleBackColor = true;
@@ -241,7 +242,7 @@
             this.jonniButton.Tag = "Jonny";
             this.jonniButton.Text = "Джонни Джостар";
             this.jonniButton.UseVisualStyleBackColor = true;
-            this.jonniButton.Click += new System.EventHandler(this.dioButton_Click);
+            this.jonniButton.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // joshefButton
             // 
@@ -306,6 +307,60 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // siteTabPage
+            // 
+            this.siteTabPage.Controls.Add(this.label3);
+            this.siteTabPage.Controls.Add(this.label2);
+            this.siteTabPage.Controls.Add(this.pictureBox4);
+            this.siteTabPage.Controls.Add(this.pictureBox3);
+            this.siteTabPage.Location = new System.Drawing.Point(4, 27);
+            this.siteTabPage.Name = "siteTabPage";
+            this.siteTabPage.Size = new System.Drawing.Size(777, 320);
+            this.siteTabPage.TabIndex = 5;
+            this.siteTabPage.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(3, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(317, 39);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "И на эту картинку";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(360, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(350, 39);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Кликни на картинку";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(5, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(359, 200);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(360, 102);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(399, 222);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // toolTip1
             // 
             this.toolTip1.UseAnimation = false;
@@ -318,63 +373,9 @@
             this.splitter1.TabIndex = 11;
             this.splitter1.TabStop = false;
             // 
-            // siteTabPage
-            // 
-            this.siteTabPage.Controls.Add(this.label3);
-            this.siteTabPage.Controls.Add(this.label2);
-            this.siteTabPage.Controls.Add(this.pictureBox4);
-            this.siteTabPage.Controls.Add(this.pictureBox3);
-            this.siteTabPage.Location = new System.Drawing.Point(4, 23);
-            this.siteTabPage.Name = "siteTabPage";
-            this.siteTabPage.Size = new System.Drawing.Size(777, 324);
-            this.siteTabPage.TabIndex = 5;
-            this.siteTabPage.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(360, 102);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(399, 222);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(5, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(359, 200);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans Arabic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(360, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(399, 57);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Кликни на картинку";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Noto Sans Arabic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(3, 262);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 57);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "И на эту картинку";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 351);
             this.Controls.Add(this.splitter1);
@@ -393,8 +394,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.siteTabPage.ResumeLayout(false);
             this.siteTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

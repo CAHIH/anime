@@ -41,9 +41,6 @@ namespace Marsel_karton
 
         private void dioButton_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            ChelovekForm f = new ChelovekForm(btn.Tag.ToString());
-            f.ShowDialog();
         }
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -59,6 +56,24 @@ namespace Marsel_karton
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.youtube.com/results?search_query=%D0%B4%D0%B6%D0%BE%D0%B4%D0%B6%D0%BE");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            HeroesForm f = new HeroesForm("Главные герои");
+            f.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            HeroesForm f = new HeroesForm("Главные злодеи");
+            f.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HeroesForm f = new HeroesForm("Второстепенные персонажи");
+            f.Show();
         }
     }
 }
