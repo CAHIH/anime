@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\123456789\Marsel_karton\bin\Debug\Marsel_karton.exe.config
+C:\Users\user\Desktop\123456789\Marsel_karton\bin\Debug\Marsel_karton.exe
+C:\Users\user\Desktop\123456789\Marsel_karton\bin\Debug\Marsel_karton.pdb
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.csprojAssemblyReference.cache
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.mainForm.resources
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.infoForm.resources
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.ChelovekForm.resources
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.HeroesForm.resources
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.Properties.Resources.resources
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.csproj.GenerateResource.cache
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.exe
+C:\Users\user\Desktop\123456789\Marsel_karton\obj\Debug\Marsel_karton.pdb
