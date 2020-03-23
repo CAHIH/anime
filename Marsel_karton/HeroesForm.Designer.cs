@@ -32,7 +32,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.vozrastComboBox = new System.Windows.Forms.ComboBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.смотретьПодробнееToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.скачатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.statusComboBox = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.vozrastTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -48,9 +50,9 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(447, 127);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(438, 196);
+            this.pictureBox2.Size = new System.Drawing.Size(231, 171);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
@@ -68,22 +70,13 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Noto Sans Arabic", 8.249999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button7.Location = new System.Drawing.Point(447, 130);
+            this.button7.Location = new System.Drawing.Point(447, 85);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(180, 34);
+            this.button7.Size = new System.Drawing.Size(231, 34);
             this.button7.TabIndex = 15;
             this.button7.Text = "Фильтр";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
-            // 
-            // vozrastComboBox
-            // 
-            this.vozrastComboBox.FormattingEnabled = true;
-            this.vozrastComboBox.Location = new System.Drawing.Point(497, 65);
-            this.vozrastComboBox.Name = "vozrastComboBox";
-            this.vozrastComboBox.Size = new System.Drawing.Size(179, 21);
-            this.vozrastComboBox.TabIndex = 16;
-            this.vozrastComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // contextMenuStrip1
             // 
@@ -109,7 +102,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(442, 65);
+            this.label1.Location = new System.Drawing.Point(444, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 18;
@@ -118,7 +111,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(444, 97);
+            this.label2.Location = new System.Drawing.Point(446, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 19;
@@ -130,7 +123,7 @@
             this.statusComboBox.Items.AddRange(new object[] {
             "Жив",
             "Мертв"});
-            this.statusComboBox.Location = new System.Drawing.Point(497, 92);
+            this.statusComboBox.Location = new System.Drawing.Point(499, 32);
             this.statusComboBox.Name = "statusComboBox";
             this.statusComboBox.Size = new System.Drawing.Size(179, 21);
             this.statusComboBox.TabIndex = 20;
@@ -140,19 +133,45 @@
             this.panel1.AutoScroll = true;
             this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 61);
+            this.panel1.Size = new System.Drawing.Size(441, 300);
             this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(453, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Имя";
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(499, 59);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(179, 20);
+            this.nameTextBox.TabIndex = 24;
+            // 
+            // vozrastTextBox
+            // 
+            this.vozrastTextBox.Location = new System.Drawing.Point(499, 5);
+            this.vozrastTextBox.Name = "vozrastTextBox";
+            this.vozrastTextBox.Size = new System.Drawing.Size(179, 20);
+            this.vozrastTextBox.TabIndex = 25;
             // 
             // HeroesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(694, 335);
+            this.Controls.Add(this.vozrastTextBox);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.vozrastComboBox);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -171,7 +190,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ComboBox vozrastComboBox;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem смотретьПодробнееToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem скачатьToolStripMenuItem;
@@ -180,5 +198,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox statusComboBox;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox vozrastTextBox;
     }
 }

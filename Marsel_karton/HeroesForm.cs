@@ -10,15 +10,22 @@ using System.Windows.Forms;
 
 namespace Marsel_karton
 {
-    public struct Jojo
+    public struct Characters
     {
+        /// <summary>
+        /// Имя
+        /// </summary>
         public string name;
         public bool isLife;
         public int vozrast;
+        /// <summary>
+        /// Кнопка
+        /// </summary>
         public Button lbl;
+        public string picName;
         
 
-        public Jojo(string _name, bool _isLife, int _vozrast, string _tag)
+        public Characters(string _name, bool _isLife, int _vozrast, string _tag)
         {
             name = _name;
             isLife = _isLife;
@@ -26,42 +33,63 @@ namespace Marsel_karton
 
             lbl = new Button();
             lbl.Size = new Size(127, 53);
-            lbl.Tag = _tag;
+            picName = _tag;
             lbl.Text = name;
         }
     }
 
-    public partial class HeroesForm : Form        
+    public partial class HeroesForm : Form
     {
-        Button[] knopki = new Button[10];
+        Button[] knopki = new Button[1];
 
-        Jojo[] persons = new Jojo[10];
+        public static Characters[] persons = new Characters[11];
+
+        
+        
+
+        public static List<Characters> myTeam = new List<Characters>();
+
+
 
 
         public HeroesForm(string hero)
         {
             InitializeComponent();
+
+
             Text = hero;
 
-            persons[0] = new Jojo("Джоске", true, 17, "Joske");
-            persons[1] = new Jojo("Джозеф", true, 57, "Joseph");
-            persons[2] = new Jojo("Джотаро", true, 33, "Jotaro");
-            persons[3] = new Jojo("Пуччи", true, 39, "Pucci");
-            persons[4] = new Jojo("Джолин", true, 19, "Jolin");
-            persons[5] = new Jojo("Окуясу", true, 17, "Okuyasu");
-            persons[6] = new Jojo("Дьяволо", true, 35, "Diavolo");
-            persons[7] = new Jojo("Дио Брандо", true, 113, "Dio");
-            persons[8] = new Jojo("Джонни", true, 19 , "Jonny");
-            persons[9] = new Jojo("Спидвагон", true, 36, "Speedwagon");
+
+            persons[0] = new Characters("Джоске", true, 17, "Joske");
+            persons[1] = new Characters("Джозеф", true, 57, "Joseph");
+            persons[2] = new Characters("Джотаро", true, 33, "Jotaro");
+            persons[3] = new Characters("Пуччи", true, 39, "Pucci");
+            persons[4] = new Characters("Джолин", true, 19, "Jolin");
+            persons[5] = new Characters("Окуясу", true, 17, "Okuyasu");
+            persons[6] = new Characters("Дьяволо", true, 35, "Diavolo");
+            persons[7] = new Characters("Дио Брандо", true, 113, "Dio");
+            persons[8] = new Characters("Джонни", true, 19 , "Jonny");
+            persons[9] = new Characters("Спидвагон", true, 36, "Speedwagon");
+            persons[10] = new Characters("Джайро ", true, 43, "Gyro Zeppeli");
+
+
             int x = 0;
+            int y = 3;
             for (int i = 0; i < persons.Length; i++)
             {
-                persons[i].lbl.Location = new Point(x, 3);
+                persons[i].lbl.Location = new Point(x, y);
                 persons[i].lbl.Click += new EventHandler(jonniButton_Click);
                 panel1.Controls.Add(persons[i].lbl);
 
                 x = x + 130;
+                if (x + 130 > panel1.Width)
+                {
+                    x = 0;
+                    y = y + 50;
+                }
             }
+
+            
 
 
             /*if (hero == "Главные герои")
@@ -83,11 +111,17 @@ namespace Marsel_karton
             }*/
         }
 
-        private void jonniButton_Click(object sender, EventArgs e)
+        public static void jonniButton_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            ChelovekForm f = new ChelovekForm(btn.Tag.ToString());
-            f.ShowDialog();
+            for (int i = 0; i < persons.Length; i++)
+            {
+                if (sender == persons[i].lbl ||
+                    ((PictureBox)sender).) 
+                {
+                    ChelovekForm f = new ChelovekForm(persons[i]);
+                    f.ShowDialog();
+                }
+            }
         }
 
         private void HeroesForm_Load(object sender, EventArgs e)
@@ -98,13 +132,23 @@ namespace Marsel_karton
 
         private void button7_Click_1(object sender, EventArgs e)
         {
+            int x = 0;
+            int y = 3;
             for (int i = 0; i < persons.Length; i++)
             {
+                if (sender == persons[i].lbl)
+
                 persons[i].lbl.Visible = true;
 
                 //По возрасту
-                if (vozrastComboBox.Text != "" &&
-                    persons[i].vozrast > Convert.ToInt32(vozrastComboBox.Text))
+                if (vozrastTextBox.Text != "" &&
+                    persons[i].vozrast > Convert.ToInt32(vozrastTextBox.Text))
+                {
+                    persons[i].lbl.Visible = false;
+                }
+                //По имени
+                if (nameTextBox.Text != "" &&
+                    !persons[i].name.Contains(nameTextBox.Text))
                 {
                     persons[i].lbl.Visible = false;
                 }
@@ -117,6 +161,17 @@ namespace Marsel_karton
                 if (persons[i].isLife == false && statusComboBox.Text == "Жив")
                 {
                     persons[i].lbl.Visible = false;
+                }
+
+                if (persons[i].lbl.Visible)
+                {
+                    persons[i].lbl.Location = new Point(x, y);
+                    x = x + 130;
+                    if (x + 130 > panel1.Width)
+                    {
+                        x = 0;
+                        y = y + 50;
+                    }
                 }
 
 
@@ -142,6 +197,11 @@ namespace Marsel_karton
         private void скачатьToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
