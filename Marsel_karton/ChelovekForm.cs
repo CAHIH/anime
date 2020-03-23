@@ -12,21 +12,16 @@ namespace Marsel_karton
 {
     public partial class ChelovekForm : Form
     {
-        Characters myPers;
-
-
-        public ChelovekForm(Characters pers)
+        public ChelovekForm(string name)
         {
-            myPers = pers;
-
             InitializeComponent();
-            Text = "Информация о " + pers.name;
+            Text = "Информация о " + name;
 
             try
             {
-                pictureBox1.Load("../../Resources/" + pers.picName + ".jpg");
+                pictureBox1.Load("../../Resources/" + name + ".jpg");
                 textBox1.Lines =
-                    System.IO.File.ReadAllLines("../../Resources/" + pers.picName + ".txt");
+                    System.IO.File.ReadAllLines("../../Resources/" + name + ".txt");
             }
             catch(Exception) { }
 
@@ -35,11 +30,6 @@ namespace Marsel_karton
         private void Form3_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            HeroesForm.myTeam.Add(myPers);
         }
     }
 }

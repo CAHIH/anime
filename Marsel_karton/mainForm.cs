@@ -90,33 +90,6 @@ namespace Marsel_karton
         {
 
         }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            tabPage1.Controls.Clear();
-            tabPage1.Controls.Add(pictureBox6);
-
-            int y = 3;
-
-            foreach (Characters pers in HeroesForm.myTeam)
-            {
-                PictureBox pic = new PictureBox();
-                pic.Location = new Point(312, y);
-                pic.Size = new Size(300, 200);
-                pic.SizeMode = PictureBoxSizeMode.Zoom;
-                pic.Click += new EventHandler(HeroesForm.jonniButton_Click);
-                pic.Load("../../Resources/" + pers.picName + ".jpg");
-                tabPage1.Controls.Add(pic);
-
-                y = y + 220;
-            }
-
-        }
     }
 }
 
